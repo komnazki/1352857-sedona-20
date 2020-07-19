@@ -7,12 +7,12 @@
 </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo.svg" width="102" height="84" alt="Логотип Седона">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__open-menu"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav_wrapper">
+        <a class="main-nav__logo">
+          <img src="img/logo.svg" width="102" height="84" alt="Логотип Седона">
+        </a>
+        <button type="button" class="main-nav__open-menu"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">
@@ -36,9 +36,9 @@
             </li>
           </ul>
         </div>
-        <button class="main-nav__close-menu"><span class="visually-hidden">Закрыть меню</span></button>
+        <button type="button" class="main-nav__close-menu"><span class="visually-hidden">Закрыть меню</span></button>
       </nav>
-      <img class="page-header__title main-page-title" src="img/title.svg" width="282" height="49" alt="Город Седона">
+      <img class="page-header__title page-header__title--main" src="img/title.svg" width="282" height="49" alt="Город Седона">
     </header>
     <main>
       <div class="main-header">
@@ -47,40 +47,40 @@
       </div>
       <section class="gallery">
         <div class="photo-card">
-          <img src="img/vastness.jpg" width="280" height="280" alt="Фото просторов Седоны">
+          <img src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото просторов Седоны">
           <h2 class="photo-card__name">Неродные просторы</h2>
           <p class="photo-card__author">Автор фото: Борис</p>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <input type="checkbox" id="checkbox-like" name="checkbox-like" class="photo-card__like">
-            <label for="checkbox-like" class="photo-card__quantity">1350</label>
-          </form>
+          <div class="post">
+            <button type="button" class="post__like"></button>
+            <span class="post__quantity">1350</span>
+          </div>
         </div>
         <div class="photo-card">
-          <img src="img/vegetation.jpg" width="280" height="280" alt="Фотоя растительности Седоны">
+          <img src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото растительности Седоны">
           <h2 class="photo-card__name">Местная растительность</h2>
           <p class="photo-card__author">Автор фото: Сергей</p>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <input type="checkbox" id="checkbox-like" name="checkbox-like" class="photo-card__like">
-            <label for="checkbox-like" class="photo-card__quantity">143</label>
-          </form>
+          <div class="post">
+            <button type="button" class="post__like"></button>
+            <span class="post__quantity">143</span>
+          </div>
         </div>
         <div class="photo-card">
-          <img src="img/road.jpg" width="280" height="280" alt="Фото северной дороги">
+          <img src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото северной дороги">
           <h2 class="photo-card__name">Дорога на север</h2>
           <p class="photo-card__author">Автор фото: Петр</p>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <input type="checkbox" id="checkbox-like" name="checkbox-like" class="photo-card__like">
-            <label for="checkbox-like" class="photo-card__quantity">96</label>
-          </form>
+          <div class="post">
+            <button type="button" class="post__like"></button>
+            <span class="post__quantity">96</span>
+          </div>
         </div>
         <div class="photo-card">
-          <img src="img/bridge.jpg" width="280" height="280" alt="Фото моста дьявола">
+          <img src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото моста дьявола">
           <h2 class="photo-card__name">Мост дьявола</h2>
           <p class="photo-card__author">Автор фото: Антон</p>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <input type="checkbox" id="checkbox-like" name="checkbox-like" class="photo-card__like">
-            <label for="checkbox-like" class="photo-card__quantity">254</label>
-          </form>
+          <div class="post">
+            <button type="button" class="post__like"></button>
+            <span class="post__quantity">254</span>
+          </div>
         </div>
       </section>
     </main>
@@ -99,7 +99,8 @@
                 <a class="social__link social__link--youtube" href="#">Мы в ютубе</a>
             </li>
           </ul>
-        </div  class="page-footer__copyright copyright">
+        </div>
+        <div  class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
