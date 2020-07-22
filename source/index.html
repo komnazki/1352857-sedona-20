@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -36,7 +37,9 @@
           </ul>
         </div>
       </nav>
-      <img class="page-header__title page-header__title--main" src="img/title.svg" width="282" height="49" alt="Город Седона">
+      <div class="page-header__logo">
+        <img class="page-header__title page-header__title--main" src="img/title.svg" width="282" height="49" alt="Город Седона">
+      </div>
     </header>
     <main class="page-main">
       <div class="main-header main-header--main-page">
@@ -50,7 +53,8 @@
             <p class="advantages-type__description">— №1 —</p>
             <p class="advantages-type__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="advantages__image image-city"></div>
+          <div class="advantages__image image-city">
+          </div>
           <ul class="service">
             <li class="service__item service__item--housing">
               <h3>Жилье</h3>
@@ -76,21 +80,21 @@
           </div>
         </li>
         <li class="advantages__item">
-          <div class="advantages-type">
+          <div class="advantages-type advantages-type--square">
             <h2 class="advantages-type__title">Небольшая площадь</h2>
             <p class="advantages-type__description">— №3 —</p>
             <p class="advantages-type__description">Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="advantages__item">
-          <div class="advantages-type">
+          <div class="advantages-type advantages-type--road">
             <h2 class="advantages-type__title">Красивая дорога</h2>
             <p class="advantages-type__description">— №4 —</p>
             <p class="advantages-type__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="advantages__item">
-          <div class="advantages-type">
+          <div class="advantages-type advantages-type--free">
             <h2 class="advantages-type__title">Мало туристов</h2>
             <p class="advantages-type__description">— №5 —</p>
             <p class="advantages-type__description">Большинство едет в гранд каньон и толпится там</p>
@@ -98,8 +102,10 @@
         </li>
       </ol>
       <div class="search-hotel">
-        <h3 class="search-hotel__title">Заинтересовались?</h3>
-        <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="search_hotel__info">
+          <h3 class="search-hotel__title">Заинтересовались?</h3>
+          <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
         <a class="search-hotel__link" href="#">Найти гостиницу</a>
       </div>
       <div class="map">
@@ -124,7 +130,7 @@
         </div>
         <div  class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
