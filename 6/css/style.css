@@ -9,12 +9,12 @@
 .advantages-type--bridge {
   background-color: #81B3D2;
   padding: 39px 16px 35px 15px;
-  color: white;
+  color: #ffffff;
 }
 .advantages-type--city {
   padding: 55px 12px 39px 13px;
   background-color: #81B3D2;
-  color: white;
+  color: #ffffff;
 }
 .advantages-type--free {
   padding: 22px 25px 24px 22px;
@@ -48,7 +48,7 @@
   color: #333333;
 }
 .search-hotel__link {
-  color: white;
+  color: #ffffff;
   margin: 27px 20px 49px 20px;
   padding: 14px 32px 18px 32px;
   background-color: #81B3D2;
@@ -100,12 +100,12 @@
   margin-left: 70px;
   margin-bottom: 35px;
 }
-.service__item {
-  list-style-type: none;
-}
-.service__item .service__title {
+.service__title {
   font-size: 18px;
   line-height: 26px;
+}
+.service__item {
+  list-style-type: none;
 }
 .social__title {
   font-size: 21px;
@@ -116,7 +116,11 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color: black;
+  color: #000000;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../../fonts/ptsans.woff2") format("woff2"), url("../../fonts/ptsans.woff") format("woff");
 }
 
 /*# sourceMappingURL=style.css.map */
