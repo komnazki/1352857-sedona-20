@@ -65,10 +65,10 @@
         <fieldset class="feedback__section">
           <legend class="feedback__title">Контактная информация:</legend>
           <div class="feedback__data">
-            <label class="feedback__nubmber-title" for="user-number">Контактный телефон*:</label>
-            <input class="feedback__number-item" type="tel" id="user-number" name="user-number" placeholder="Введите телефон" required>
-            <label class="feedback__email-title" for="user-email">Электронная почта*:</label>
-            <input class="feedback__email-item" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
+            <label class="feedback__name" for="user-number">Контактный телефон*:</label>
+            <input class="feedback__value" type="tel" id="user-number" name="user-number" placeholder="Введите телефон" required>
+            <label class="feedback__name" for="user-email">Электронная почта*:</label>
+            <input class="feedback__value" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
           </div>
         </fieldset>
         <fieldset class="feedback__section">
@@ -135,7 +135,9 @@
     <div class="popup-feedback">
       <h2 class="popup-feedback__title">Ваш отзыв отправлен!</h2>
       <p class="popup-feedback__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="popup-feedback__close" type="button">Закрыть окно</button>
+      <div class="popup-feedback__down-part">
+        <button class="popup-feedback__close" type="button">Закрыть окно</button>
+      </div>
     </div>
   </body>
 </html>
