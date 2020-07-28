@@ -1,5 +1,7 @@
 .main-header--main-page {
   margin: 32px 18px 27px 17px;
+  width: 285px;
+  box-sizing: border-box;
 }
 
 .main-header__heading {
@@ -14,4 +16,25 @@
 
 .main-header--photo {
   margin: 31px 9px 20px 12px;
+  width: 299px;
+  height: 137px;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header--main-page {
+    width: 520px;
+  }
+
+  .main-header--photo {
+    width: 458px;
+    height: 118px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header--main-page {
+    width: 483px;
+  }
 }
