@@ -6,11 +6,10 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <div class="container">
       <header class="page-header">
         <nav class="main-nav">
-          <button type="button" class="main-nav__open-menu"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -37,6 +36,7 @@
             <a class="main-nav__logo">
               <img src="img/logo.svg" width="102" height="84" alt="Логотип Седона">
             </a>
+            <button type="button" class="main-nav__open-menu"><span class="visually-hidden">Открыть меню</span></button>
           </div>
         </nav>
         <div class="page-header__logo">
@@ -80,16 +80,22 @@
             </div>
             <div class="advantages__image advantages__image--image-bridge">
             </div>
+          </li>
+          <li class="advantages__item">
             <div class="advantages-type advantages-type--square">
               <h2 class="advantages-type__title">Небольшая площадь</h2>
               <p class="advantages-type__description">— №3 —</p>
               <p class="advantages-type__description">Все интересные места находятся очень близко</p>
             </div>
+          </li>
+          <li class="advantages__item">
             <div class="advantages-type advantages-type--road">
               <h2 class="advantages-type__title">Красивая дорога</h2>
               <p class="advantages-type__description">— №4 —</p>
               <p class="advantages-type__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
+          </li>
+          <li class="advantages__item">
             <div class="advantages-type advantages-type--free">
               <h2 class="advantages-type__title">Мало туристов</h2>
               <p class="advantages-type__description">— №5 —</p>
@@ -110,8 +116,8 @@
       </main>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
+          <b class="page-footer__title">#Visitsedona</b>
           <div class="page-footer__social social">
-            <b class="social__title">#Visitsedona</b>
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
@@ -124,8 +130,10 @@
               </li>
             </ul>
           </div>
-          <div  class="page-footer__copyright copyright">
+          <div class="page-footer__copyright-author">
             <p class="copyright__text">Разработано:</p>
+          </div>
+          <div class="page-footer__copyright-site">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
           </div>
         </div>
