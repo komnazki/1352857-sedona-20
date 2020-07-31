@@ -1,3 +1,17 @@
+.main-nav {
+  display: flex;
+}
+
 .main-nav__list {
   background: @back-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__open-menu {
+    display: none;
+  }
+
+  .site-list {
+    display: flex;
+  }
 }

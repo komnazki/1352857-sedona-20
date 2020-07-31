@@ -1,5 +1,11 @@
 .main-header--main-page {
-  margin: 32px 18px 27px 17px;
+  margin: 0 auto;
+  padding: 47px 18px 11px 17px;
+}
+
+.main-header--photo {
+  margin: 0 auto;
+  padding: 32px 9px 20px 12px;
 }
 
 .main-header__heading {
@@ -12,6 +18,23 @@
   line-height: 24px;
 }
 
-.main-header--photo {
-  margin: 31px 9px 20px 12px;
+@media (min-width: @tablet-width) {
+  .main-header--main-page {
+    padding: 43px 124px 56px 124px;
+  }
+
+  .main-header--photo {
+    padding: 65px 155px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header--main-page {
+    padding: 55px 359px 41px 358px;
+  }
+
+  .main-header--photo {
+    padding: 102px 372px 67px 370px;
+  }
+
 }

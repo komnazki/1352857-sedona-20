@@ -1,3 +1,7 @@
+.photo-card {
+  width: 280px;
+}
+
 .photo-card__name {
   font-weight: bold;
   margin: 0;
@@ -9,6 +13,42 @@
   line-height: 24px;
 }
 
-.photo-card__image {
-  margin: 22px 20px 11px 20px;
+@media (min-width: @tablet-width) {
+  .photo-card {
+    width: 324px;
+  }
+
+  .photo-card__image {
+    width: 324px;
+  }
+
+  .photo-card--vastness {
+    width: 648px;
+  }
+
+  .photo-card__image--vastness {
+    width: 648px;
+  }
+
+  .photo-card__description {
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-card {
+    width: 400px;
+  }
+
+  .photo-card__image {
+    width: 400px;
+  }
+
+  .photo-card--vastness {
+    width: 1200px;
+  }
+
+  .photo-card__image--vastness {
+    width: 1200px;
+  }
 }

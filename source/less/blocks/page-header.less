@@ -1,5 +1,17 @@
 .page-header__logo {
-  width: 320px;
-  height: 389px;
+  min-height: 389px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    min-height: 518px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    background-size: 100%;
+  }
 }

@@ -1,5 +1,7 @@
 .advantages-type {
   background-color: #eeeeee;
+  width: 320px;
+  box-sizing: border-box;
 }
 
 .advantages-type__title {
@@ -33,4 +35,17 @@
 .advantages-type--square {
   padding: 26px 26px 14px 26px;
   background-color: @back-gray;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-type {
+    width: 256px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-type {
+    width: 400px;
+  }
 }
