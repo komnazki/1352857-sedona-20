@@ -1,3 +1,7 @@
+.popup-error {
+  border: 2px solid red;
+}
+
 .popup-error__title {
   font-size: 18px;
   line-height: 26px;
@@ -18,4 +22,11 @@
   line-height: 26px;
   color: @white;
   background-color: @back-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .popup-error {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
