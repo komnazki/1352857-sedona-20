@@ -1,3 +1,7 @@
+.popup-feedback {
+  border: 2px solid red;
+}
+
 .popup-feedback__title {
   font-size: 18px;
   line-height: 26px;
@@ -21,4 +25,11 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+}
+
+@media (min-width: @desktop-width) {
+  .popup-feedback {
+    width: 640px;
+    margin: 0 auto;
+  }
 }

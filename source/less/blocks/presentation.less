@@ -1,6 +1,8 @@
-.presentation__item {
-  margin: 32px 26px 33px 28px;
+.presentation {
+  display: flex;
+  flex-direction: column;
 }
+
 
 .presentation__title {
   font-size: 18px;
@@ -8,7 +10,34 @@
   font-weight: bold;
 }
 
+.presentation__item {
+  margin: 0 auto;
+}
+
 .presentation__discription {
   line-height: 24px;
   color: #333333;
+}
+
+.presentation__video {
+  width: 320px;
+  min-height: 201px;
+  border: 2px solid blue;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation {
+    margin: 0 auto;
+  }
+
+  .presentation__video {
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__video {
+    width: 800px;
+  }
 }
