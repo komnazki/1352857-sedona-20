@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding-top: 38px;
+  padding-bottom: 26px;
+  position: relative;
 }
 
 .page-footer__title {
@@ -12,8 +16,64 @@
   font-weight: bold;
 }
 
+.page-footer__copyright-author {
+  align-self: stretch;
+  margin-left: 80px;
+  width: 121px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__copyright-text {
+  margin: 0;
+}
+
+.page-footer__link::before {
+  content: "";
+  width: 27px;
+  height: 34px;
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
+  position: absolute;
+  right: 96px;
+  bottom: 20px;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     flex-direction: row;
+    justify-content: stretch;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .page-footer__title {
+    margin-left: 45px;
+  }
+
+  .page-footer__copyright-author {
+    align-self: center;
+    margin-left: 105px;
+  }
+
+  .page-footer__link::before {
+    width: 27px;
+    height: 34px;
+    top: 43px;
+    right: 87px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__title {
+    margin-left: 104px;
+  }
+
+  .page-footer__copyright-author {
+    align-self: center;
+    margin-left: 261px;
+  }
+
+  .page-footer__link::before {
+    right: 80px;
   }
 }

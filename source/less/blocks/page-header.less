@@ -2,16 +2,61 @@
   min-height: 389px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.page-header__title--main {
+  position: absolute;
+  top: 91px;
+  left: 19px;
+}
+
+.page-header__logo--photo {
+  min-height: 214px;
+  padding-top: 52px;
+  box-sizing: border-box;
+  background-position: 60% 100%;
+}
+
+.page-header__title--photo {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
     min-height: 518px;
+    background-size: cover;
+  }
+
+  .page-header__title--main {
+    width: 461px;
+    height: 350px;
+    top: 77px;
+    left: 153px;
+  }
+
+  .page-header__logo--photo {
+    padding-top: 95px;
+    min-height: 290px;
+  }
+
+  .page-header__title--photo {
+    width: 457px;
+    height: 78px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
     background-size: 100%;
+  }
+
+  .page-header__title--main {
+    width: 461px;
+    height: 350px;
+    top: 78px;
+    left: 370px;
   }
 }
