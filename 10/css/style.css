@@ -8,7 +8,7 @@
 }
 .advantages-type__title {
   font-size: 21px;
-  line-height: 10px;
+  line-height: 26px;
   font-weight: bold;
   margin: 0;
 }
@@ -135,9 +135,9 @@
   position: relative;
 }
 .page-header__title--main {
-  position: absolute;
-  top: 91px;
-  left: 19px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 91px;
 }
 .page-header__logo--photo {
   min-height: 214px;
@@ -157,8 +157,7 @@
   .page-header__title--main {
     width: 461px;
     height: 350px;
-    top: 77px;
-    left: 153px;
+    padding-top: 77px;
   }
   .page-header__logo--photo {
     padding-top: 95px;
@@ -176,8 +175,6 @@
   .page-header__title--main {
     width: 461px;
     height: 350px;
-    top: 78px;
-    left: 370px;
   }
 }
 .copyright__text {
@@ -466,6 +463,8 @@
 .post__like {
   border: none;
   padding: 0;
+  width: 21px;
+  height: 21px;
 }
 .post__quantity {
   margin-left: 37px;
@@ -527,7 +526,7 @@
   width: 39px;
   height: 37px;
   position: absolute;
-  left: -48px;
+  left: -49px;
   top: -9px;
 }
 .service__item--souvenirs::before {
@@ -564,19 +563,18 @@
     line-height: 26px;
   }
   .service__item {
-    margin-top: 158px;
-    display: inline-block;
+    padding-top: 158px;
     text-align: center;
   }
   .service__item--housing {
-    margin-left: 37px;
-    margin-right: 73px;
+    padding-left: 37px;
+    padding-right: 73px;
     min-width: 185px;
   }
   .service__item--souvenirs {
     order: 1;
-    margin-left: 70px;
-    margin-right: 30px;
+    padding-left: 70px;
+    padding-right: 30px;
     min-width: 193px;
   }
   .service__item--food {
@@ -585,20 +583,20 @@
   .service__item--housing::before {
     width: 75px;
     height: 72px;
-    left: 54px;
-    top: -98px;
+    left: 91px;
+    top: 60px;
   }
   .service__item--souvenirs::before {
     width: 64px;
     height: 75px;
-    left: 63px;
-    top: -105px;
+    left: 133px;
+    top: 57px;
   }
   .service__item--food::before {
     width: 76px;
     height: 68px;
     left: 51px;
-    top: -94px;
+    top: 63px;
   }
 }
 @media (min-width: 1200px) {
@@ -606,24 +604,24 @@
     width: 1200px;
   }
   .service__item--housing {
-    margin-left: 58px;
-    margin-right: 104px;
+    padding-left: 58px;
+    padding-right: 104px;
   }
   .service__item--souvenirs {
-    margin-left: 121px;
-    margin-right: 78px;
+    padding-left: 121px;
+    padding-right: 78px;
   }
   .service__item--housing::before {
-    left: 103px;
-    top: -98px;
+    left: 165px;
+    top: 59px;
   }
   .service__item--souvenirs::before {
-    left: 95px;
-    top: -105px;
+    left: 220px;
+    top: 59px;
   }
   .service__item--food::before {
-    left: 117px;
-    top: -94px;
+    left: 115px;
+    top: 59px;
   }
 }
 .social__list {
@@ -1060,23 +1058,19 @@
   font-weight: bold;
 }
 .page-footer__copyright-author {
-  align-self: stretch;
-  margin-left: 80px;
   width: 121px;
   display: flex;
   justify-content: center;
 }
+.page-footer__link {
+  margin-left: 5px;
+  display: block;
+}
 .page-footer__copyright-text {
   margin: 0;
-}
-.page-footer__link::before {
-  content: "";
-  width: 27px;
-  height: 34px;
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
-  position: absolute;
-  right: 96px;
-  bottom: 20px;
+  padding-top: 3px;
+  display: block;
+  line-height: 26px;
 }
 @media (min-width: 768px) {
   .page-footer__wrapper {
@@ -1084,6 +1078,7 @@
     justify-content: stretch;
     padding-top: 36px;
     padding-bottom: 36px;
+    align-items: center;
   }
   .page-footer__title {
     margin-left: 45px;
@@ -1091,12 +1086,6 @@
   .page-footer__copyright-author {
     align-self: center;
     margin-left: 105px;
-  }
-  .page-footer__link::before {
-    width: 27px;
-    height: 34px;
-    top: 43px;
-    right: 87px;
   }
 }
 @media (min-width: 1200px) {
@@ -1106,9 +1095,6 @@
   .page-footer__copyright-author {
     align-self: center;
     margin-left: 261px;
-  }
-  .page-footer__link::before {
-    right: 80px;
   }
 }
 .container {
