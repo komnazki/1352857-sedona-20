@@ -13,22 +13,129 @@
 .service__item {
   list-style-type: none;
   display: block;
+  position: relative;
+}
+
+.service__item--housing::before {
+  content: "";
+  background: url("../img/icon-house.svg") no-repeat;
+  background-size: 100%;
+  fill: #81b3d2;
+  width: 39px;
+  height: 37px;
+  position: absolute;
+  left: -49px;
+  top: -9px;
+}
+
+.service__item--souvenirs::before {
+  content: "";
+  background: url("../img/icon-gift.svg") no-repeat;
+  background-size: 100%;
+  width: 32px;
+  height: 38px;
+  position: absolute;
+  left: -45px;
+  top: -11px;
+}
+
+.service__item--food::before {
+  content: "";
+  background: url("../img/icon-burger.svg") no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 37px;
+  position: absolute;
+  left: -52px;
+  top: -5px;
 }
 
 @media (min-width: @tablet-width) {
   .service {
     display: flex;
     width: 700px;
-    margin-left: 36px;
+    min-height: 330px;
+    margin-top: 0;
+    margin-bottom: 59px;
+    margin-left: 0;
+  }
+
+  .service__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .service__item {
+    padding-top: 158px;
+    text-align: center;
+  }
+
+  .service__item--housing {
+    padding-left: 37px;
+    padding-right: 73px;
+    min-width: 185px;
   }
 
   .service__item--souvenirs {
     order: 1;
+    padding-left: 70px;
+    padding-right: 30px;
+    min-width: 193px;
+  }
+
+  .service__item--food {
+    min-width: 180px;
+  }
+
+  .service__item--housing::before {
+    width: 75px;
+    height: 72px;
+    left: 91px;
+    top: 60px;
+  }
+
+  .service__item--souvenirs::before {
+    width: 64px;
+    height: 75px;
+    left: 133px;
+    top: 57px;
+  }
+
+  .service__item--food::before {
+    width: 76px;
+    height: 68px;
+    left: 51px;
+    top: 63px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .service {
-    width: 1120px;
+    width: 1200px;
+  }
+
+  .service__item--housing {
+    padding-left: 58px;
+    padding-right: 104px;
+  }
+
+  .service__item--souvenirs {
+    padding-left: 121px;
+    padding-right: 78px;
+  }
+
+  .service__item--housing::before {
+    left: 165px;
+    top: 59px;
+  }
+
+  .service__item--souvenirs::before {
+    left: 220px;
+    top: 59px;
+  }
+
+  .service__item--food::before {
+    left: 115px;
+    top: 59px;
   }
 }

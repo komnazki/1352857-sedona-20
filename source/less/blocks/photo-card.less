@@ -1,5 +1,18 @@
 .photo-card {
   width: 280px;
+  padding-top: 22px;
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.photo-card__description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.photo-card:last-of-type {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .photo-card__name {
@@ -7,15 +20,42 @@
   margin: 0;
 }
 
+.photo-card__author {
+  text-transform: none;
+  margin: 0;
+}
+
 .photo-card__name,
 .photo-card__author {
-  margin-left: 20px;
   line-height: 24px;
+  font-size: 14px;
+}
+
+.photo-card__image--tablet,
+.photo-card__image--desktop {
+  display: none;
+}
+
+.photo-card__image--vastness-tablet,
+.photo-card__image--vastness-desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .photo-card {
     width: 324px;
+    border: none;
+    padding: 0;
+  }
+
+  .photo-card__description {
+    flex-direction: row;
+    padding: 17px 0 15px 20px;
+    background-color: #f2f2f2;
+  }
+
+  .photo-card__signature {
+    flex-grow: 1;
   }
 
   .photo-card__image {
@@ -24,14 +64,31 @@
 
   .photo-card--vastness {
     width: 648px;
+    min-height: 400px;
+    background: url("img/photo-sunset-tablet@1x.jpg") no-repeat;
   }
 
   .photo-card__image--vastness {
     width: 648px;
   }
 
-  .photo-card__description {
-    background-color: #f2f2f2;
+  .photo-card__image,
+  .photo-card__image--desktop {
+    display: none;
+  }
+
+  .photo-card__image--tablet {
+    display: block;
+  }
+
+  .photo-card__image--vastness-desktop,
+  .photo-card__image--vastness {
+    display: none;
+  }
+
+  .photo-card__image--vastness-tablet {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -44,11 +101,41 @@
     width: 400px;
   }
 
+  .photo-card__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0%, 0%, 0%, 0.3);
+    color: @white;
+    box-sizing: border-box;
+  }
+
   .photo-card--vastness {
     width: 1200px;
+    padding: 0;
   }
 
   .photo-card__image--vastness {
     width: 1200px;
+  }
+
+  .photo-card__image,
+  .photo-card__image--tablet {
+    display: none;
+  }
+
+  .photo-card__image--desktop {
+    display: block;
+  }
+
+  .photo-card__image--vastness-tablet,
+  .photo-card__image--vastness {
+    display: none;
+  }
+
+  .photo-card__image--vastness-desktop {
+    display: block;
+    width: 100%;
   }
 }

@@ -1,5 +1,57 @@
 .post {
-  margin-left: 20px;
   margin-top: 13px;
   margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.post__like {
+  border: none;
+  padding: 0;
+  width: 21px;
+  height: 21px;
+}
+
+.post__quantity {
+  margin-left: 37px;
+}
+
+.post__like-svg {
+  position: absolute;
+  right: 237px;
+  bottom: 17px;
+  width: 23px;
+  height: 21px;
+  border: none;
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .post {
+    margin-bottom: 0;
+  }
+
+  .post__like-svg {
+    position: absolute;
+    right: 62px;
+    bottom: 31px;
+  }
+
+  .post__quantity {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post__quantity {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .post__like-svg {
+    opacity: 1;
+
+    & path {
+      fill: #ffffff;
+    }
+  }
 }
