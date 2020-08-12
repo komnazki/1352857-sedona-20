@@ -1,5 +1,19 @@
 .popup-feedback {
-  border: 2px solid red;
+  display: none;
+}
+
+.popup-feedback__message {
+  display: inline-block;
+  text-align: center;
+  padding-left: 37px;
+  padding-right: 39px;
+}
+
+.popup-error__cause {
+  display: inline-block;
+  text-align: center;
+  padding-left: 41px;
+  padding-right: 42px;
 }
 
 .popup-feedback__title {
@@ -25,6 +39,8 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  border: none;
+  text-transform: uppercase;
 }
 
 @media (min-width: @desktop-width) {

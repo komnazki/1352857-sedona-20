@@ -1,6 +1,8 @@
 .presentation {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-bottom: 66px;
 }
 
 
@@ -12,6 +14,9 @@
 
 .presentation__item {
   margin: 0 auto;
+  width: 266px;
+  display: inline-block;
+  text-align: center;
 }
 
 .presentation__discription {
@@ -22,7 +27,11 @@
 .presentation__video {
   width: 320px;
   min-height: 201px;
-  border: 2px solid blue;
+}
+
+.presentation__video--tablet,
+.presentation__video--desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
