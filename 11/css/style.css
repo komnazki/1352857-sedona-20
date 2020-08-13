@@ -418,8 +418,8 @@
   line-height: 24px;
   font-size: 14px;
 }
-.photo-card__image--tablet,
-.photo-card__image--desktop {
+.photo-card__image-tablet,
+.photo-card__image-desktop {
   display: none;
 }
 .photo-card__image--vastness-tablet,
@@ -452,10 +452,10 @@
     width: 648px;
   }
   .photo-card__image,
-  .photo-card__image--desktop {
+  .photo-card__image-desktop {
     display: none;
   }
-  .photo-card__image--tablet {
+  .photo-card__image-tablet {
     display: block;
   }
   .photo-card__image--vastness-desktop,
@@ -491,10 +491,10 @@
     width: 1200px;
   }
   .photo-card__image,
-  .photo-card__image--tablet {
+  .photo-card__image-tablet {
     display: none;
   }
-  .photo-card__image--desktop {
+  .photo-card__image-desktop {
     display: block;
   }
   .photo-card__image--vastness-tablet,
@@ -516,6 +516,7 @@
   padding: 0;
   width: 21px;
   height: 21px;
+  background: none;
 }
 .post__quantity {
   margin-left: 37px;
@@ -531,7 +532,6 @@
     margin-bottom: 0;
   }
   .post__like-svg {
-    position: absolute;
     right: 62px;
     bottom: 31px;
   }
@@ -752,8 +752,8 @@
   width: 320px;
   min-height: 201px;
 }
-.presentation__video--tablet,
-.presentation__video--desktop {
+.presentation__video-tablet,
+.presentation__video-desktop {
   display: none;
 }
 @media (min-width: 768px) {
@@ -819,6 +819,10 @@
   padding-top: 18px;
   padding-bottom: 14px;
   padding-left: 21px;
+  width: 100%;
+}
+.feedback__value--contacts {
+  margin-left: 0;
 }
 .feedback__data {
   position: relative;
@@ -842,15 +846,6 @@
   padding-right: 58px;
   box-sizing: border-box;
   width: 280px;
-}
-.feedback__value--first-name {
-  width: 230px;
-}
-.feedback__value--last-name {
-  width: 192px;
-}
-.feedback__value--patronymic {
-  width: 194px;
 }
 .feedback__value::-moz-placeholder {
   color: #000000;
@@ -1033,19 +1028,6 @@
     width: 648px;
     height: 206px;
   }
-  .feedback__value--number,
-  .feedback__value--email {
-    width: 648px;
-  }
-  .feedback__value--first-name {
-    width: 216px;
-  }
-  .feedback__value--patronymic {
-    width: 178px;
-  }
-  .feedback__value--last-patronymic {
-    width: 180px;
-  }
   .feedback__push {
     width: 324px;
     margin-left: 0;
@@ -1067,6 +1049,13 @@
   .feedback {
     padding-left: 120px;
     padding-right: 120px;
+  }
+  .feedback__title--impression {
+    margin-left: 80px;
+    text-align: start;
+  }
+  .feedback__value--contacts {
+    margin-left: 16px;
   }
   .feedback__section--contacts,
   .feedback__section--attractions,
@@ -1092,18 +1081,17 @@
     min-width: 960px;
   }
   .feedback__name--email {
-    margin-left: 79px;
-    width: 147px;
+    margin-left: 140px;
   }
   .feedback__value--number,
   .feedback__value--email {
-    width: 315px;
     margin-left: 18px;
     box-sizing: border-box;
   }
   .feedback__data {
     flex-direction: row;
     margin-top: 71px;
+    width: 100%;
   }
   .feedback__impression {
     width: 400px;
@@ -1115,15 +1103,6 @@
   .feedback__name--telephone {
     margin-left: 0;
   }
-  .feedback__value--first-name {
-    width: 350px;
-  }
-  .feedback__value--last-name {
-    width: 312px;
-  }
-  .feedback__value--patronymic {
-    width: 314px;
-  }
   .feedback__span-number {
     display: none;
   }
@@ -1132,7 +1111,7 @@
     top: 0;
   }
   .feedback__svg-email {
-    left: 904px;
+    left: 895px;
     top: 0;
   }
 }
@@ -1364,8 +1343,8 @@
   box-sizing: border-box;
   position: relative;
 }
-.map_image--tablet,
-.map_image--desktop {
+.map__image-tablet,
+.map__image-desktop {
   display: none;
 }
 .map::before {
@@ -1382,11 +1361,11 @@
     width: 768px;
     height: 350px;
   }
-  .map_image--tablet {
+  .map__image-tablet {
     display: block;
   }
-  .map_image,
-  .map_image--desktop {
+  .map__image,
+  .map__image-desktop {
     display: none;
   }
   .map::before {
@@ -1398,11 +1377,11 @@
   .map {
     width: 1200px;
   }
-  .map_image--desktop {
+  .map__image-desktop {
     display: block;
   }
-  .map_image,
-  .map_image--tablet {
+  .map__image,
+  .map__image-tablet {
     display: none;
   }
   .map::before {
@@ -1469,6 +1448,8 @@
 .container {
   width: 320px;
   margin: 0 auto;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .container {
@@ -1504,6 +1485,7 @@
 .page-body {
   margin: 0;
   text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 body {
   font-family: "PT Sans", "Arial", sans-serif;
