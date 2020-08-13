@@ -52,6 +52,11 @@
   padding-top: 18px;
   padding-bottom: 14px;
   padding-left: 21px;
+  width: 100%;
+}
+
+.feedback__value--contacts {
+  margin-left: 0;
 }
 
 .feedback__data {
@@ -80,18 +85,6 @@
   padding-right: 58px;
   box-sizing: border-box;
   width: 280px;
-}
-
-.feedback__value--first-name {
-  width: 230px;
-}
-
-.feedback__value--last-name {
-  width: 192px;
-}
-
-.feedback__value--patronymic {
-  width: 194px;
 }
 
 .feedback__value::placeholder {
@@ -303,23 +296,6 @@
     height: 206px;
   }
 
-  .feedback__value--number,
-  .feedback__value--email {
-    width: 648px;
-  }
-
-  .feedback__value--first-name {
-    width: 216px;
-  }
-
-.feedback__value--patronymic {
-  width: 178px;
-}
-
-.feedback__value--last-patronymic {
-  width: 180px;
-}
-
   .feedback__push {
     width: 324px;
     margin-left: 0;
@@ -346,6 +322,15 @@
   .feedback {
     padding-left: 120px;
     padding-right: 120px;
+  }
+
+  .feedback__title--impression {
+    margin-left: 80px;
+    text-align: start;
+  }
+
+  .feedback__value--contacts {
+    margin-left: 16px;
   }
 
   .feedback__section--contacts,
@@ -377,13 +362,11 @@
   }
 
   .feedback__name--email {
-    margin-left: 79px;
-    width: 147px;
+    margin-left: 140px;
   }
 
   .feedback__value--number,
   .feedback__value--email {
-    width: 315px;;
     margin-left: 18px;
     box-sizing: border-box;
   }
@@ -391,6 +374,7 @@
   .feedback__data {
     flex-direction: row;
     margin-top: 71px;
+    width: 100%;
   }
 
   .feedback__impression {
@@ -406,18 +390,6 @@
     margin-left: 0;
   }
 
-  .feedback__value--first-name {
-    width: 350px;
-  }
-
-  .feedback__value--last-name {
-    width: 312px;
-  }
-
-  .feedback__value--patronymic {
-    width: 314px;
-  }
-
   .feedback__span-number {
     display: none;
   }
@@ -427,7 +399,7 @@
     top: 0;
   }
   .feedback__svg-email {
-    left: 904px;
+    left: 895px;
     top: 0;
   }
 }
