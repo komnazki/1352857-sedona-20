@@ -25,20 +25,20 @@
   margin: 0;
 }
 
+.photo-card__picture {
+  line-height: 0;
+  display: block;
+}
+
+.photo-card__image {
+  max-width: 100%;
+  height: auto;
+}
+
 .photo-card__name,
 .photo-card__author {
   line-height: 24px;
   font-size: 14px;
-}
-
-.photo-card__image-tablet,
-.photo-card__image-desktop {
-  display: none;
-}
-
-.photo-card__image--vastness-tablet,
-.photo-card__image--vastness-desktop {
-  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -58,46 +58,13 @@
     flex-grow: 1;
   }
 
-  .photo-card__image {
-    width: 324px;
-  }
-
   .photo-card--vastness {
     width: 648px;
-    min-height: 400px;
-    background: url("img/photo-sunset-tablet@1x.jpg") no-repeat;
-  }
-
-  .photo-card__image--vastness {
-    width: 648px;
-  }
-
-  .photo-card__image,
-  .photo-card__image-desktop {
-    display: none;
-  }
-
-  .photo-card__image-tablet {
-    display: block;
-  }
-
-  .photo-card__image--vastness-desktop,
-  .photo-card__image--vastness {
-    display: none;
-  }
-
-  .photo-card__image--vastness-tablet {
-    display: block;
-    width: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-card {
-    width: 400px;
-  }
-
-  .photo-card__image {
     width: 400px;
   }
 
@@ -114,28 +81,5 @@
   .photo-card--vastness {
     width: 1200px;
     padding: 0;
-  }
-
-  .photo-card__image--vastness {
-    width: 1200px;
-  }
-
-  .photo-card__image,
-  .photo-card__image-tablet {
-    display: none;
-  }
-
-  .photo-card__image-desktop {
-    display: block;
-  }
-
-  .photo-card__image--vastness-tablet,
-  .photo-card__image--vastness {
-    display: none;
-  }
-
-  .photo-card__image--vastness-desktop {
-    display: block;
-    width: 100%;
   }
 }

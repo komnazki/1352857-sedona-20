@@ -51,9 +51,11 @@
         <section class="gallery">
           <div class="photo-card photo-card--vastness">
             <a class="photo-card__link">
-              <img class="photo-card__image photo-card__image--vastness" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото просторов Седоны">
-              <img class="photo-card__image photo-card__image--vastness-tablet" src="img/photo-sunset-tablet@1x.jpg" width="648" height="400" alt="Фото просторов Седоны">
-              <img class="photo-card__image photo-card__image--vastness-desktop" src="img/photo-sunset-desktop@1x.jpg" width="1200" height="400" alt="Фото просторов Седоны">
+              <picture class="photo-card__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg" srcset="img/photo-sunset-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg" srset="img/photo-sunset-tablet@2x.jpg">
+                <img class="photo-card__image photo-card__image--vastness" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" width="1200" height="400" alt="Фото просторов Седоны">
+              </picture>
             </a>
             <div class="photo-card__description">
               <div class="photo-card__signature">
@@ -76,9 +78,11 @@
           </div>
           <div class="photo-card">
             <a class="photo-card__link">
-              <img class="photo-card__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото растительности Седоны">
-              <img class="photo-card__image-tablet" src="img/photo-cactus-tablet@1x.jpg" width="324" height="267" alt="Фото растительности Седоны">
-              <img class="photo-card__image-desktop" src="img/photo-cactus-desktop@1x.jpg" width="400" height="267" alt="Фото растительности Седоны">
+              <picture class="photo-card__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg" srcset="img/photo-cactus-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg" srset="img/photo-cactus-tablet@2x.jpg">
+                <img class="photo-card__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" width="400" height="280" alt="Фото растительности Седоны">
+              </picture>
             </a>
             <div class="photo-card__description">
               <div class="photo-card__signature">
@@ -101,9 +105,11 @@
           </div>
           <div class="photo-card">
             <a class="photo-card__link">
-              <img class="photo-card__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото северной дороги">
-              <img class="photo-card__image-tablet" src="img/photo-roads-tablet@1x.jpg" width="324" height="267" alt="Фото северной дороги">
-              <img class="photo-card__image-desktop" src="img/photo-roads-desktop@1x.jpg" width="400" height="267" alt="Фото северной дороги">
+              <picture class="photo-card__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg" srcset="img/photo-roads-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg" srset="img/photo-roads-tablet@2x.jpg">
+                <img class="photo-card__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg" width="400" height="280" alt="Фото северной дороги">
+              </picture>
             </a>
             <div class="photo-card__description">
               <div class="photo-card__signature">
@@ -126,9 +132,11 @@
           </div>
           <div class="photo-card">
             <a class="photo-card__link">
-              <img class="photo-card__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото моста дьявола">
-              <img class="photo-card__image-tablet" src="img/photo-bridge-tablet@1x.jpg" width="324" height="267" alt="Фото моста дьявола">
-              <img class="photo-card__image-desktop" src="img/photo-bridge-desktop@1x.jpg" width="400" height="267" alt="Фото моста дьявола">
+              <picture class="photo-card__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg" srcset="img/photo-bridge-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg" srset="img/photo-bridge-tablet@2x.jpg">
+                <img class="photo-card__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" width="400" height="280" alt="Фото моста дьявола">
+              </picture>
             </a>
             <div class="photo-card__description">
               <div class="photo-card__signature">
