@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/1352857-sedona-20/13/">
+</head>
+  <body class="page-body">
+    <div class="container">
+      <header class="page-header">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">
+                  Фото и видео
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link">
+                  Форма отзыва
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link"  href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__image" src="img/logo.svg" width="102" height="84" alt="Логотип Седона">
+            </a>
+            <button type="button" class="main-nav__open-menu"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+        </nav>
+        <div class="page-header__logo page-header__logo--photo">
+          <img class="page-header__title page-header__title--photo" src="img/title.svg" width="282" height="49" alt="Город Седона">
+        </div>
+      </header>
+      <main>
+        <div class="main-header main-header--feedback">
+          <h1 class="main-header__heading main-header__heading--feedback">Оставьте свой отзыв</h1>
+          <p class="main-header__about">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <form class="feedback" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="feedback__section feedback__section--name">
+            <legend class="feedback__title feedback__title--name">Представьтесь:</legend>
+            <div class="feedback__textbox">
+              <label class="feedback__name" for="text-name">Имя*:</label>
+              <input class="feedback__value" type="text" id="text-name" name="text-name" placeholder="Петр" required>
+            </div>
+            <div class="feedback__textbox">
+              <label class="feedback__name" for="surname">Фамилия*:</label>
+              <input class="feedback__value" type="text" id="surname" name="text-name" placeholder="Иванов" required>
+            </div>
+            <div class="feedback__textbox">
+              <label class="feedback__name" for="patronymic">Отчество:</label>
+              <input class="feedback__value" type="text" id="patronymic" name="text-name" placeholder="Александрович">
+            </div>
+          </fieldset>
+          <fieldset class="feedback__section feedback__section--contacts">
+            <legend class="feedback__title feedback__title--contacts">Контактная информация:</legend>
+            <div class="feedback__data">
+              <div class="feedback__textbox-label">
+                <label class="feedback__name feedback__name--telephone" for="user-number"><span class="feedback__span-number">Контактный</span> телефон*:</label>
+              </div>
+              <div class="feedback__textbox-input">
+                <input class="feedback__value feedback__value--contacts" type="tel" id="user-number" name="user-number" placeholder="Введите телефон" required>
+                <svg class="feedback__svg-telephone" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                  <g id="Page-1">
+                    <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                      <g id="phone" transform="translate(85.000000, 126.000000)">
+                        <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="feedback__textbox-label">
+                <label class="feedback__name feedback__name--email" for="user-email">Электронная почта*:</label>
+              </div>
+              <div class="feedback__textbox-input">
+                <input class="feedback__value feedback__value--contacts" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
+                <svg class="feedback__svg-email" version="1.1" id="Layer_1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                  <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                </svg>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="feedback__section feedback__section--impression">
+            <legend class="feedback__title feedback__title feedback__title--impression">Ваше Общее впечатление:</legend>
+            <div class="feedback__impression">
+              <input class="feedback__option feedback__option--positive visually-hidden" type="radio" name="radio" id="radio-positive" value="positive" checked>
+              <label class="feedback__opinion feedback__opinion--positive" for="radio-positive">Скорее положительное</label>
+              <input class="feedback__option feedback__option--negative visually-hidden" type="radio" name="radio" id="radio-negative" value="positive">
+              <label class="feedback__opinion feedback__opinion--negative" for="radio-negative">Скорее отрицательное</label>
+              <input class="feedback__option feedback__option--none visually-hidden" type="radio" name="radio" id="radio-difficulty" value="positive">
+              <label class="feedback__opinion feedback__opinion--none" for="radio-difficulty">Затрудняюсь ответить</label>
+            </div>
+          </fieldset>
+          <fieldset class="feedback__section feedback__section--attractions">
+            <legend class="feedback__title feedback__title--attractions">Посещенные достопримечательности:</legend>
+            <div class="feedback__attractions">
+              <ul class="feedback__list">
+                <li class="feedback__cell">
+                  <input class="feedback__checkbox-input visually-hidden" type="checkbox" name="checkbox" id="checkbox-bridge" checked>
+                  <label class="feedback__checkbox-item" for="checkbox-bridge">Мост дьявола</label>
+                </li>
+                <li class="feedback__cell">
+                <input class="feedback__checkbox-input visually-hidden" type="checkbox" name="checkbox" id="checkbox-mountain" checked>
+                <label class="feedback__checkbox-item" for="checkbox-mountain">Гора-Колокол</label>
+              </li>
+              <li class="feedback__cell">
+                <input class="feedback__checkbox-input visually-hidden" type="checkbox" name="checkbox" id="checkbox-park" checked>
+                <label class="feedback__checkbox-item" for="checkbox-park">Слайд-парк</label>
+              </li>
+              <li class="feedback__cell">
+                <input class="feedback__checkbox-input visually-hidden" type="checkbox" name="checkbox" id="checkbox-rocks">
+                <label class="feedback__checkbox-item" for="checkbox-rocks">Красные скалы</label>
+              </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="feedback__section feedback__section--emotion">
+            <legend class="feedback__title feedback__title--emotion">Опишите свои эмоции:</legend>
+            <div class="feedback__emotion">
+              <label class="feedback__message-title" for="feedback-message"></label>
+              <textarea class="feedback__message-item" id="feedback-message" name="feedback-message">Опишите подробно все свои восторги</textarea>
+            </div>
+          </fieldset>
+          <button class="feedback__push" type="submit">Отправить отзыв</button>
+          <span class="feedback__necessarily">* — обязательные поля</span>
+        </form>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <b class="page-footer__title">#Visitsedona</b>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в твиттере</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в фейсбуке</span></a>
+              </li>
+              <li class="social__item social__item--youtube">
+                <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы в ютубе</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright-author">
+            <p class="page-footer__copyright-text">Разработано</p>
+            <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg version="1.1" id="Layer_1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <div class="popup-error">
+        <div class="popup-error__cause">
+          <h2 class="popup-error__title">Что-то пошло не так!</h2>
+          <p class="popup-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <button class="popup-error__close" type="button">Ок</button>
+      </div>
+      <div class="popup-feedback">
+        <div class="popup-feedback__message">
+          <h2 class="popup-feedback__title">Ваш отзыв отправлен!</h2>
+          <p class="popup-feedback__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="popup-feedback__down-part">
+          <button class="popup-feedback__close" type="button">Закрыть окно</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
