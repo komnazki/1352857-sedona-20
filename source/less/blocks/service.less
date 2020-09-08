@@ -1,5 +1,5 @@
 .service {
-  margin-top: 35px;
+  margin-top: 37px;
   margin-left: 70px;
   margin-bottom: 35px;
   padding: 0;
@@ -8,12 +8,25 @@
 .service__title {
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
 }
 
 .service__item {
   list-style-type: none;
   display: block;
   position: relative;
+}
+
+.service__paragraph {
+  margin-top: 16px;
+}
+
+.service__paragraph--burger {
+  width: 210px;
+}
+
+.service__item:not(:first-child) {
+  margin-top: 26px;
 }
 
 .service__svg-house {
@@ -23,7 +36,6 @@
   left: -49px;
   top: -9px;
 }
-
 
 .service__svg-souvenirs {
   width: 32px;
@@ -47,7 +59,7 @@
     width: 700px;
     min-height: 330px;
     margin-top: 0;
-    margin-bottom: 59px;
+    margin-bottom: 0;
     margin-left: 0;
   }
 
@@ -59,6 +71,16 @@
   .service__item {
     padding-top: 158px;
     text-align: center;
+  }
+
+  .service__paragraph {
+    margin-top: 22px;
+  }
+
+
+  .service__paragraph--burger {
+    width: 155px;
+    padding-left: 12px;
   }
 
   .service__item--housing {
@@ -98,6 +120,10 @@
     left: 51px;
     top: 63px;
   }
+
+  .service__item:not(:first-child) {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -108,25 +134,53 @@
   .service__item--housing {
     padding-left: 58px;
     padding-right: 104px;
+    width: 282px;
   }
 
   .service__item--souvenirs {
-    padding-left: 121px;
+    padding-left: 127px;
     padding-right: 78px;
   }
 
+  .service__paragraph--burger {
+    width: 300px;
+    padding-left: 7px;
+  }
+
+  .service__paragraph--house {
+    width: 282px;
+    margin-top: 24px;
+  }
+
+  .service__paragraph--souvenirs {
+    width: 244px;
+    margin-top: 23px;
+  }
+
+  .service__title--house {
+    margin-left: 2px;
+  }
+
+  .service__title--burger {
+    margin-left: 4px;
+  }
+
+  .service__title--souvenirs {
+    margin-left: 2px;
+  }
+
   .service__svg-house {
-    left: 165px;
+    left: 160px;
     top: 59px;
   }
 
   .service__svg-souvenirs {
-    left: 220px;
+    left: 215px;
     top: 59px;
   }
 
   .service__svg-food {
-    left: 115px;
-    top: 59px;
+    left: 118px;
+    top: 64px;
   }
 }

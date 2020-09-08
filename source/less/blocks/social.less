@@ -3,7 +3,7 @@
   list-style-type: none;
   padding: 0;
   margin-top: 33px;
-  margin-bottom: 45px;
+  margin-bottom: 41px;
 }
 
 .social__item {
@@ -12,6 +12,15 @@
   min-height: 48px;
   position: relative;
   margin-right: 6px;
+}
+
+.social__item:hover {
+  background-color: #669ec0;
+}
+
+.social__item:active {
+  background-color: #5496bd;
+  fill-opacity: 0.3;
 }
 
 .social__item--youtube {
@@ -45,12 +54,14 @@
 @media (min-width: @tablet-width) {
   .social__list {
     margin: 0;
-    margin-left: 97px;
+    margin-left: 82px;
+    padding-top: 30px;
+    padding-bottom: 36px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .social__list {
-    margin-left: 254px;
+    margin-left: 238px;
   }
 }

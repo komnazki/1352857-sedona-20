@@ -8,7 +8,7 @@
 }
 
 .advantages-type__title {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   margin: 0;
@@ -16,6 +16,7 @@
 
 .advantages-type__description {
   margin-bottom: 0;
+  margin-top: 13px;
 }
 
 .advantages-type--square::after,
@@ -24,8 +25,9 @@
   border-bottom: 1px solid #d6d6d6;
   width: 280px;
   position: absolute;
-  bottom: 15px;
+  bottom: -1px;
   left: 20px;
+  z-index: 1;
 }
 
 .advantages-type--bridge {
@@ -41,12 +43,12 @@
 }
 
 .advantages-type--free {
-  padding: 22px 22px 24px 22px;
+  padding: 29px 28px 24px 31px;
   background-color: @back-gray;
 }
 
 .advantages-type--road {
-  padding: 25px 41px 24px 42px;
+  padding: 27px 41px 24px 42px;
   background-color: @back-gray;
 }
 
@@ -58,6 +60,11 @@
 @media (max-width: @mobile-width) {
   .advantages-type__title br {
     display: none;
+  }
+
+  .advantages-type__description--free {
+    padding-left: 3px;
+    padding-right: 5px;
   }
 }
 
@@ -76,7 +83,7 @@
   }
 
   .advantages-type--square {
-    padding: 52px 33px 52px 33px;
+    padding: 41px 33px 52px 33px;
   }
 
   .advantages-type--road {
@@ -84,16 +91,45 @@
   }
 
   .advantages-type--free {
-    padding: 42px 56px 41px 41px;
+    padding: 42px 56px 41px 55px;
   }
 
   .advantages-type__title {
     line-height: 26px;
+    font-size: 21px;
+  }
+
+  .advantages-type__title--bridge {
+    padding-left: 17px;
+    padding-right: 17px;
   }
 
   .advantages-type--square::after,
   .advantages-type--road::after {
     display: none;
+  }
+
+  .advantages-type__title-city {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .advantages-type__description {
+    margin-top: 22px;
+  }
+
+  .advantages-type__description--road {
+    width: 140px;
+    padding-left: 10px;
+  }
+
+  .advantages-type__description--free {
+    width: 165px;
+    padding-right: 18px;
+    display: block;
+    box-sizing: border-box;
   }
 }
 
@@ -120,5 +156,39 @@
 
   .advantages-type--free {
     padding: 43px 55px 62px 55px;
+  }
+
+  .advantages-type__title {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .advantages-type__title-city {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .advantages-type__description--city {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .advantages-type__title--bridge {
+    padding-left: 47px;
+    padding-right: 46px;
+  }
+
+  .advantages-type__description--bridge {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .advantages-type__description--road {
+    width: 270px;
+  }
+
+  .advantages-type__description--free {
+    width: 290px;
+    padding-left: 13px;
   }
 }

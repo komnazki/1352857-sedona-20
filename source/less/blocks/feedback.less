@@ -17,6 +17,20 @@
   border-bottom: 1px solid #e5e5e5;
   margin-top: 20px;
   min-width: 280px;
+  margin-left: 0;
+}
+
+.feedback__section--contacts {
+  padding-bottom: 28px;
+}
+
+.feedback__section--impression {
+  padding-bottom: 41px;
+}
+
+.feedback__section--attractions {
+  margin-top: 15px;
+  padding-bottom: 20px;
 }
 
 .feedback__title {
@@ -48,11 +62,20 @@
   box-sizing: border-box;
   min-height: 58px;
   border: none;
-  margin-left: 17px;
+  margin-left: 13px;
   padding-top: 18px;
   padding-bottom: 14px;
-  padding-left: 21px;
+  padding-left: 22px;
   width: 100%;
+}
+
+.feedback__value:hover {
+  background-color: #e5e5e5;
+}
+
+.feedback__value:active {
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
 }
 
 .feedback__value--contacts {
@@ -123,6 +146,18 @@
   top: -14px;
 }
 
+.feedback__opinion:hover::before {
+  background-color: #e5e5e5;
+}
+
+.feedback__opinion:active::before {
+  background-color: #d5d5d5;
+}
+
+.feedback__opinion:active::after {
+  opacity: 0.3;
+}
+
 .feedback__option:checked + .feedback__opinion::after {
   content: "";
   background-color: #333333;
@@ -155,8 +190,8 @@
   text-transform: none;
 }
 
-.feedback__checkbox-item:first-of-type {
-  margin-top: 36px;
+.feedback__checkbox-item--bridge {
+  margin-top: 17px;
 }
 
 .feedback__checkbox-item::before {
@@ -168,6 +203,18 @@
   position: absolute;
   left: -80px;
   top: -16px;
+}
+
+.feedback__checkbox-item:hover::before {
+  background-color: #e5e5e5;
+}
+
+.feedback__checkbox-item:active::before {
+  background-color: #d5d5d5;
+}
+
+.feedback__checkbox-item:active::after {
+  opacity: 0.3;
 }
 
 .feedback__checkbox-input:checked + .feedback__checkbox-item::after {
@@ -199,7 +246,7 @@
 }
 
 .feedback__push {
-  margin: 51px 21px 48px 19px;
+  margin: 45px 21px 48px 19px;
   padding: 18px 33px 14px 32px;
   background-color: @back-blue;
   line-height: 26px;
@@ -209,6 +256,20 @@
   width: 100%;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.feedback__push:hover {
+  background-color: #669ec0;
+}
+
+.feedback__push:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.feedback__push:disabled {
+  background-color: #e5e5e5;
 }
 
 .feedback__necessarily {
@@ -247,35 +308,73 @@
   .feedback__section {
     border: none;
     padding: 0;
+    margin: 0;
+  }
+
+  .feedback__title {
+    font-size: 21px;
+  }
+
+  .feedback__title--impression {
+    font-size: 21px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .feedback__title--name {
+    font-size: 21px;
+    position: absolute;
+    top: 0;
+    left: 50px;
   }
 
   .feedback__title--attractions {
     width: 308px;
+    padding-left: 48px;
+    padding-right: 46px;
   }
 
   .feedback__section--impression {
     order: -1;
-    width: 272px;
+    width: 274px;
     padding: 0;
     flex-grow: 1;
+    border-right: 1px solid #dbdbdb;
   }
 
   .feedback__section--attractions {
     width: 100%;
     padding-left: 95px;
     padding-right: 64px;
+    margin-top: 73px;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .feedback__section--contacts {
+    margin-top: 72px;
+    position: relative;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .feedback__section--emotion {
+    margin-top: 64px;
+    width: 100%;
+    padding: 0;
+    border-top: 1px solid #dbdbdb;
   }
 
   .feedback__opinion {
     margin-top: 52px;
+    margin-left: 75px;
   }
 
   .feedback__textbox:first-of-type {
-    margin-top: 54px;
+    margin-top: 80px;
   }
 
   .feedback__opinion:first-of-type {
-    margin-top: 72px;
+    margin-top: 100px;
   }
 
   .feedback__list {
@@ -283,14 +382,11 @@
     flex-wrap: wrap;
   }
 
-  .feedback__section--emotion {
-    width: 100%;
-    padding: 0;
-  }
-
   .feedback__message-item {
     width: 100%;
     min-height: 160px;
+    margin-top: 54px;
+    padding-top: 20px;
   }
 
   .feedback__data {
@@ -303,24 +399,71 @@
   .feedback__push {
     width: 324px;
     margin-left: 0;
+    margin-top: 52px;
+    padding-left: 25px;
   }
 
   .feedback__necessarily {
     display: flex;
     align-items: center;
+    margin-top: 10px;
   }
 
   .feedback__svg-telephone {
     left: 590px;
-    top: 51px;
+    top: 55px;
   }
 
   .feedback__svg-email {
     left: 591px;
-    top: 155px;
+    top: 168px;
+  }
+
+  .feedback__name {
+    margin-left: 54px;
+    margin-top: 1px;
+  }
+
+  .feedback__name--telephone {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .feedback__name--email {
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .feedback__title--contacts {
+    font-size: 21px;
+    padding-left: 55px;
+    padding-right: 57px;
+  }
+
+  .feedback__checkbox-item--bridge {
+    margin-top: 40px;
+  }
+
+  .feedback__checkbox-item--park {
+    margin-top: 65px;
+  }
+
+  .feedback__checkbox-item--mountain {
+    margin-top: 40px;
+    margin-left: 110px;
+  }
+
+  .feedback__checkbox-item--rocks {
+    margin-top: 65px;
+    margin-left: 110px;
+    min-width: 150px;
+  }
+
+  .feedback__title--emotion {
+    padding-left: 48px;
+    padding-right: 47px;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .feedback {
@@ -334,7 +477,8 @@
   }
 
   .feedback__value--contacts {
-    margin-left: 16px;
+    margin-left: 17px;
+    width: 257px;
   }
 
   .feedback__section--contacts,
@@ -352,21 +496,24 @@
 
   .feedback__section--attractions {
     padding: 0;
+    margin-top: 42px;
   }
 
   .feedback__section--contacts {
     width: 100%;
     margin-top: 70px;
     padding: 0;
+    height: 165px;
   }
 
   .feedback__section--emotion {
-    margin-top: 73px;
+    margin-top: 65px;
     min-width: 960px;
   }
 
   .feedback__name--email {
-    margin-left: 140px;
+    margin-left: 136px;
+    margin-top: 19px;
   }
 
   .feedback__value--number,
@@ -392,6 +539,7 @@
 
   .feedback__name--telephone {
     margin-left: 0;
+    margin-top: 18px;
   }
 
   .feedback__span-number {
@@ -404,7 +552,39 @@
   }
 
   .feedback__svg-email {
-    left: 895px;
+    left: 900px;
     top: 0;
+  }
+
+  .feedback__section--impression {
+    margin-right: 80px;
+  }
+
+  .feedback__opinion {
+    margin-left: 79px;
+  }
+
+  .feedback__name {
+    margin-left: 0;
+  }
+
+  .feedback__checkbox-item--park {
+    margin-top: 40px;
+    margin-left: 138px;
+  }
+
+  .feedback__checkbox-item--rocks {
+    margin-top: 40px;
+    margin-left: 146px;
+  }
+
+  .feedback__push {
+    padding-left: 133px;
+    padding-right: 132px;
+    width: 480px;
+  }
+
+  .feedback__title--name {
+    left: 0;
   }
 }

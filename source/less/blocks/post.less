@@ -1,5 +1,5 @@
 .post {
-  margin-top: 13px;
+  margin-top: 10px;
   margin-bottom: 15px;
   font-weight: bold;
   display: flex;
@@ -17,7 +17,8 @@
 }
 
 .post__quantity {
-  margin-left: 14px;
+  margin-left: 15px;
+  margin-top: 3px;
 }
 
 .post__like-svg {
@@ -30,19 +31,47 @@
 @media (min-width: @tablet-width) {
   .post {
     margin-bottom: 0;
+    margin-right: 25px;
+    margin-top: 0;
   }
 
-  .post__like-svg {
-    right: 62px;
-    bottom: 31px;
+  .post--vastness {
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-top: 0;
+  }
+
+  .post--vegetation {
+    margin-right: 20px;
+  }
+
+  .post--bridge {
+    margin-right: 20px;
   }
 
   .post__quantity {
     margin-right: 10px;
+    margin-left: 11px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .post--vastness {
+    margin-right: 2px;
+  }
+
+  .post--vegetation {
+    margin-right: 10px;
+  }
+
+  .post--road {
+    margin-right: 17px;
+  }
+
+  .post--bridge {
+    margin-right: 10px;
+  }
+
   .post__quantity {
     margin: 0;
     margin-right: 20px;
