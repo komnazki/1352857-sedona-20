@@ -30,7 +30,7 @@
 
 .feedback__section--attractions {
   margin-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 39px;
 }
 
 .feedback__title {
@@ -61,21 +61,25 @@
   font-weight: bold;
   box-sizing: border-box;
   min-height: 58px;
-  border: none;
   margin-left: 13px;
-  padding-top: 18px;
-  padding-bottom: 14px;
-  padding-left: 22px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 0;
   width: 100%;
+  font-family: inherit;
+  border: 4px solid #f2f2f2;
 }
 
 .feedback__value:hover {
   background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
-.feedback__value:active {
+.feedback__value:focus {
   background-color: #ffffff;
-  border: 4px solid #e5e5e5;
+  border-color: #e5e5e5;
+  outline: none;
 }
 
 .feedback__value--contacts {
@@ -174,6 +178,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .feedback__cell {
@@ -191,7 +196,7 @@
 }
 
 .feedback__checkbox-item--bridge {
-  margin-top: 17px;
+  margin-top: 36px;
 }
 
 .feedback__checkbox-item::before {
@@ -239,10 +244,21 @@
   font-weight: bold;
   min-width: 279px;
   min-height: 160px;
-  padding: 13px 23px 29px 21px;
+  padding: 9px 19px 25px 17px;
   box-sizing: border-box;
-  border: none;
+  border: 4px solid #f2f2f2;
   margin-top: 15px;
+  font-family: inherit;
+  outline: none;
+}
+
+.feedback__message-item:hover {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.feedback__message-item:focus {
+  background-color: #ffffff;
 }
 
 .feedback__push {
@@ -257,6 +273,7 @@
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .feedback__push:hover {
@@ -297,6 +314,10 @@
   background-color: #e6e6e6;
   left: 222px;
   top: 137px;
+}
+
+.feedback__checkbox-input {
+  font-family: inherit;
 }
 
 @media (min-width: @tablet-width) {
@@ -347,7 +368,7 @@
     width: 100%;
     padding-left: 95px;
     padding-right: 64px;
-    margin-top: 73px;
+    margin-top: 53px;
     border-top: 1px solid #dbdbdb;
   }
 
@@ -358,7 +379,7 @@
   }
 
   .feedback__section--emotion {
-    margin-top: 64px;
+    margin-top: 82px;
     width: 100%;
     padding: 0;
     border-top: 1px solid #dbdbdb;
@@ -386,14 +407,13 @@
     width: 100%;
     min-height: 160px;
     margin-top: 54px;
-    padding-top: 20px;
+    padding-top: 14px;
   }
 
   .feedback__data {
     display: flex;
     flex-direction: column;
     width: 648px;
-    height: 206px;
   }
 
   .feedback__push {
@@ -441,7 +461,7 @@
   }
 
   .feedback__checkbox-item--bridge {
-    margin-top: 40px;
+    margin-top: 58px;
   }
 
   .feedback__checkbox-item--park {
@@ -449,7 +469,7 @@
   }
 
   .feedback__checkbox-item--mountain {
-    margin-top: 40px;
+    margin-top: 58px;
     margin-left: 110px;
   }
 
@@ -507,13 +527,8 @@
   }
 
   .feedback__section--emotion {
-    margin-top: 65px;
+    margin-top: 82px;
     min-width: 960px;
-  }
-
-  .feedback__name--email {
-    margin-left: 136px;
-    margin-top: 19px;
   }
 
   .feedback__value--number,
@@ -568,13 +583,18 @@
     margin-left: 0;
   }
 
+  .feedback__name--email {
+    margin-left: 136px;
+    margin-top: 19px;
+  }
+
   .feedback__checkbox-item--park {
-    margin-top: 40px;
+    margin-top: 58px;
     margin-left: 138px;
   }
 
   .feedback__checkbox-item--rocks {
-    margin-top: 40px;
+    margin-top: 58px;
     margin-left: 146px;
   }
 
