@@ -11,6 +11,7 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const del = require('del');
+const htmlmin = require('gulp-htmlmin');
 
 
 // Styles
@@ -98,6 +99,17 @@ const copy = () => {
 exports.copy = copy;
 
 
+// HTML min
+
+const htmlsmall = () => {
+  return gulp.src("source/*.html")
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest("build"));
+};
+
+exports.htmlmin = htmlsmall;
+
+
  // Build
 
 const build = gulp.series(
@@ -106,7 +118,8 @@ const build = gulp.series(
   styles,
   images,
   sprite,
-  createwWebp);
+  createwWebp,
+  htmlsmall);
 
 exports.build = build;
 

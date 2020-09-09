@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   </head>
   <body class="page-body">
     <div class="container">
@@ -49,15 +51,15 @@
       </header>
       <main class="page-main">
         <div class="main-header main-header--main-page">
-          <h1 class="main-header__heading">Седона — небольшой<br> городок в аризоне, заслуживающий большего!</h1>
+          <h1 class="main-header__heading">Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
           <p class="main-header__about">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <ol class="advantages">
           <li class="advantages__item">
             <div class="advantages-type advantages-type--city">
-              <h2 class="advantages-type__title">Настоящий<br>городок</h2>
+              <h2 class="advantages-type__title advantages-type__title-city">Настоящий городок</h2>
               <p class="advantages-type__number">— №1 —</p>
-              <p class="advantages-type__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="advantages-type__description advantages-type__description--city">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__image advantages__image--image-city">
             </div>
@@ -66,60 +68,60 @@
                 <svg class="service__svg-house">
                   <use xlink:href="img/sprite.svg#icon-house"></use>
                 </svg>
-                <h3 class="service__title">Жилье</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <h3 class="service__title service__title--house">Жилье</h3>
+                <p class="service__paragraph service__paragraph--house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="service__item service__item--souvenirs">
                 <svg class="service__svg-souvenirs">
                   <use xlink:href="img/sprite.svg#icon-gift"></use>
                 </svg>
-                <h3 class="service__title">Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
+                <h3 class="service__title service__title--souvenirs">Сувениры</h3>
+                <p class="service__paragraph--souvenirs">Не только китайского,<br> но и местного производства!</p>
               </li>
               <li class="service__item service__item--food">
                 <svg class="service__svg-food">
                   <use xlink:href="img/sprite.svg#icon-burger"></use>
                 </svg>
-                <h3 class="service__title">Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                <h3 class="service__title service__title--burger">Еда</h3>
+                <p class="service__paragraph service__paragraph--burger">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
           <li class="advantages__item">
             <div class="advantages-type advantages-type--bridge">
-              <h2 class="advantages-type__title">Там есть<br> мост дьявола</h2>
+              <h2 class="advantages-type__title advantages-type__title--bridge">Там есть мост дьявола</h2>
               <p class="advantages-type__number">— №2 —</p>
-              <p class="advantages-type__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="advantages-type__description advantages-type__description--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantages__image advantages__image--image-bridge">
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantages-type advantages-type--square">
-              <h2 class="advantages-type__title">Небольшая<br> площадь</h2>
+              <h2 class="advantages-type__title">Небольшая площадь</h2>
               <p class="advantages-type__number">— №3 —</p>
               <p class="advantages-type__description">Все интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantages-type advantages-type--road">
-              <h2 class="advantages-type__title">Красивая<br> дорога</h2>
+              <h2 class="advantages-type__title">Красивая дорога</h2>
               <p class="advantages-type__number">— №4 —</p>
-              <p class="advantages-type__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="advantages-type__description advantages-type__description--road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantages-type advantages-type--free">
-              <h2 class="advantages-type__title">Мало<br> туристов</h2>
+              <h2 class="advantages-type__title">Мало туристов</h2>
               <p class="advantages-type__number">— №5 —</p>
-              <p class="advantages-type__description">Большинство едет в гранд каньон<br> и толпится там</p>
+              <p class="advantages-type__description advantages-type__description--free">Большинство едет в гранд каньон и толпится там</p>
             </div>
           </li>
         </ol>
         <div class="search-hotel">
           <div class="search-hotel__info">
             <h3 class="search-hotel__title">Заинтересовались?</h3>
-            <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <p class="search-hotel__description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
           <a class="search-hotel__link" href="#">Найти гостиницу</a>
         </div>
