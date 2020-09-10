@@ -73,24 +73,20 @@
           <fieldset class="feedback__section feedback__section--contacts">
             <legend class="feedback__title feedback__title--contacts">Контактная информация:</legend>
             <div class="feedback__data">
-              <div class="feedback__textbox-label">
+              <div class="feedback__input-contacts">
                 <label class="feedback__name feedback__name--telephone" for="user-number"><span class="feedback__span-number">Контактный</span> телефон*:</label>
-              </div>
-              <div class="feedback__textbox-input">
                 <input class="feedback__value feedback__value--contacts" type="tel" id="user-number" name="user-number" placeholder="Введите телефон" required>
-                <svg class="feedback__svg-telephone">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
               </div>
-              <div class="feedback__textbox-label">
+              <svg class="feedback__svg-telephone">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              <div class="feedback__input-contacts">
                 <label class="feedback__name feedback__name--email" for="user-email">Электронная почта*:</label>
-              </div>
-              <div class="feedback__textbox-input">
                 <input class="feedback__value feedback__value--contacts" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
-                <svg class="feedback__svg-email">
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
               </div>
+              <svg class="feedback__svg-email">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
             </div>
           </fieldset>
           <fieldset class="feedback__section feedback__section--impression">
@@ -105,7 +101,7 @@
             </div>
           </fieldset>
           <fieldset class="feedback__section feedback__section--attractions">
-            <legend class="feedback__title feedback__title--attractions">Посещенные достопримечательности:</legend>
+            <legend class="feedback__title feedback__title--attractions">Посещенные<br>достопримечательности:</legend>
             <div class="feedback__attractions">
               <ul class="feedback__list">
                 <li class="feedback__cell">
@@ -186,7 +182,7 @@
       <div class="popup-feedback">
         <div class="popup-feedback__message">
           <h2 class="popup-feedback__title">Ваш отзыв отправлен!</h2>
-          <p class="popup-feedback__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+          <p class="popup-feedback__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="popup-feedback__down-part">
           <button class="popup-feedback__close" type="button">Закрыть окно</button>
@@ -195,3 +191,8 @@
     </div>
   </body>
 </html>
+
+
+<!-- Комментарий по критерию Б30
+у класса "main-nav  добавляется класс "main-nav--closed", при котором кнопка "main-nav__open-menu" будет бургером, т.е. закрытое меню"
+если меню открывается, то у класса "main-nav" убирается класс: "main-nav--closed" и добавляется класс: ".main-nav--opened", при котором кнопка бургера будет изменена на крестик, для закрытия меню.-->

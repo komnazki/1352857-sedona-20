@@ -56,7 +56,7 @@
         </div>
         <section class="gallery">
           <div class="photo-card photo-card--vastness">
-            <a class="photo-card__link">
+            <a class="photo-card__link" href="#">
               <picture class="photo-card__picture">
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="photo-card">
-            <a class="photo-card__link">
+            <a class="photo-card__link" href="#">
               <picture class="photo-card__picture">
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
@@ -108,7 +108,7 @@
             </div>
           </div>
           <div class="photo-card photo-card--road">
-            <a class="photo-card__link">
+            <a class="photo-card__link" href="#">
               <picture class="photo-card__picture">
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
@@ -134,7 +134,7 @@
             </div>
           </div>
           <div class="photo-card">
-            <a class="photo-card__link">
+            <a class="photo-card__link" href="#">
               <picture class="photo-card__picture">
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
@@ -173,15 +173,21 @@
             </div>
             <div class="presentation__bottom-player">
             </div>
-            <svg class="presentation__svg-replay">
-              <use xlink:href="img/sprite.svg#icon-video-replay"></use>
-            </svg>
-            <svg class="presentation__svg-subtitles">
-              <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
-            </svg>
-            <svg class="presentation__fullscreen-svg">
-              <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
-            </svg>
+            <button type="button" class="presentation__button presentation__button--replay">
+              <svg class="presentation__svg-replay">
+                <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+              </svg>
+            </button>
+            <button type="button" class="presentation__button presentation__button--subtitles">
+              <svg class="presentation__svg-subtitles">
+                <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+              </svg>
+            </button>
+            <button type="button" class="presentation__button presentation__button--fullscreen">
+              <svg class="presentation__fullscreen-svg">
+                <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </main>
@@ -226,3 +232,8 @@
     </div>
   </body>
 </html>
+
+
+<!-- Комментарий по критерию Б30
+у класса "main-nav  добавляется класс "main-nav--closed", при котором кнопка "main-nav__open-menu" будет бургером, т.е. закрытое меню"
+если меню открывается, то у класса "main-nav" убирается класс: "main-nav--closed" и добавляется класс: ".main-nav--opened", при котором кнопка бургера будет изменена на крестик, для закрытия меню.-->

@@ -61,8 +61,10 @@
               <p class="advantages-type__number">— №1 —</p>
               <p class="advantages-type__description advantages-type__description--city">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="advantages__image advantages__image--image-city">
-            </div>
+            <a class="advantages__link" href="#">
+              <div class="advantages__image advantages__image--image-city">
+              </div>
+            </a>
             <ul class="service">
               <li class="service__item service__item--housing">
                 <svg class="service__svg-house">
@@ -76,7 +78,7 @@
                   <use xlink:href="img/sprite.svg#icon-gift"></use>
                 </svg>
                 <h3 class="service__title service__title--souvenirs">Сувениры</h3>
-                <p class="service__paragraph--souvenirs">Не только китайского,<br> но и местного производства!</p>
+                <p class="service__paragraph service__paragraph--souvenirs">Не только китайского,<br> но и местного производства!</p>
               </li>
               <li class="service__item service__item--food">
                 <svg class="service__svg-food">
@@ -93,27 +95,29 @@
               <p class="advantages-type__number">— №2 —</p>
               <p class="advantages-type__description advantages-type__description--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="advantages__image advantages__image--image-bridge">
-            </div>
+            <a class="advantages__link" href="#">
+              <div class="advantages__image advantages__image--image-bridge">
+              </div>
+            </a>
           </li>
           <li class="advantages__item">
             <div class="advantages-type advantages-type--square">
-              <h2 class="advantages-type__title">Небольшая площадь</h2>
-              <p class="advantages-type__number">— №3 —</p>
+              <h2 class="advantages-type__title advantages-type__title--square">Небольшая площадь</h2>
+              <p class="advantages-type__number advantages-type__number--three">— №3 —</p>
               <p class="advantages-type__description">Все интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantages-type advantages-type--road">
-              <h2 class="advantages-type__title">Красивая дорога</h2>
-              <p class="advantages-type__number">— №4 —</p>
+              <h2 class="advantages-type__title advantages-type__title--road">Красивая дорога</h2>
+              <p class="advantages-type__number advantages-type__number--four">— №4 —</p>
               <p class="advantages-type__description advantages-type__description--road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantages-type advantages-type--free">
-              <h2 class="advantages-type__title">Мало туристов</h2>
-              <p class="advantages-type__number">— №5 —</p>
+              <h2 class="advantages-type__title advantages-type__title--free">Мало туристов</h2>
+              <p class="advantages-type__number advantages-type__number--five">— №5 —</p>
               <p class="advantages-type__description advantages-type__description--free">Большинство едет в гранд каньон и толпится там</p>
             </div>
           </li>
@@ -180,3 +184,7 @@
     </div>
   </body>
 </html>
+
+<!-- Комментарий по критерию Б30
+у класса "main-nav  добавляется класс "main-nav--closed", при котором кнопка "main-nav__open-menu" будет бургером, т.е. закрытое меню"
+если меню открывается, то у класса "main-nav" убирается класс: "main-nav--closed" и добавляется класс: ".main-nav--opened", при котором кнопка бургера будет изменена на крестик, для закрытия меню.-->

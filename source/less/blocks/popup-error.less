@@ -12,6 +12,8 @@
   color: #333333;
   font-size: 14px;
   line-height: 24px;
+  margin-top: 28px;
+  margin-bottom: 0;
 }
 
 .popup-error__close {
@@ -24,6 +26,14 @@
   background-color: @back-blue;
   text-transform: uppercase;
   border: none;
+  min-width: 180px;
+}
+
+.popup-error__cause {
+  display: inline-block;
+  text-align: center;
+  padding-left: 41px;
+  padding-right: 42px;
 }
 
 .popup-error__close:hover {
@@ -43,5 +53,25 @@
   .popup-error {
     width: 400px;
     margin: 0 auto;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+
+  .popup-error__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 48px;
+    padding-right: 47px;
+    margin-bottom: 23px;
+  }
+
+  .popup-error__close {
+    font-size: 21px;
+    min-width: 272px;
+    margin-left: 64px;
+    margin-top: 37px;
+  }
+
+  .popup-error__description {
+    margin-top: 0;
   }
 }

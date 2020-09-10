@@ -2,6 +2,10 @@
   display: none;
 }
 
+.popup-feedback br {
+  display: block;
+}
+
 .popup-feedback__message {
   display: inline-block;
   text-align: center;
@@ -9,26 +13,23 @@
   padding-right: 39px;
 }
 
-.popup-error__cause {
-  display: inline-block;
-  text-align: center;
-  padding-left: 41px;
-  padding-right: 42px;
-}
-
 .popup-feedback__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .popup-feedback__description {
   line-height: 24px;
   color: #333333;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .popup-feedback__down-part {
   background-color: @back-gray;
+  margin-top: 37px;
 }
 
 .popup-feedback__close {
@@ -41,6 +42,8 @@
   font-weight: bold;
   border: none;
   text-transform: uppercase;
+  width: 280px;
+  font-family: inherit;
 }
 
 .popup-feedback__close:hover {
@@ -54,6 +57,41 @@
 
 .popup-feedback__close:disabled {
   background-color: #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  .popup-feedback {
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    width: 640px;
+    min-height: 347px;
+    margin: 0 auto;
+  }
+
+  .popup-feedback__title {
+    font-size: 30px;
+    line-height: 26px;
+    padding-top: 54px;
+    margin-bottom: 31px;
+  }
+
+  .popup-feedback__message {
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .popup-feedback__down-part {
+    margin-top: 43px;
+    padding-bottom: 44px;
+  }
+
+  .popup-feedback__close {
+    margin-top: 44px;
+    width: 458px;
+    margin-left: 91px;
+    font-size: 21px;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
