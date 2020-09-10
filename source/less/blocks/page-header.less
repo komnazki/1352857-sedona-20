@@ -2,7 +2,7 @@
   min-height: 389px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 50%;
   position: relative;
 }
 
@@ -52,23 +52,27 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     min-height: 518px;
-    background-size: 1200px auto;
+    background-size: 100%;
   }
 
   .page-header__logo::after {
     left: 0;
     width: 100%;
+    background-position: 45% 0;
+  }
+
+  .page-header__logo--photo::after {
+    background-position: 50% 0;
   }
 
   @media (min-resolution: 2dppx) {
     .page-header__logo {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-repeat: no-repeat;
-      background-size: 1200px auto;
     }
 
-    .page-header__logo--photo {
-      background-size: 900px auto;
+    .page-header__logo--photo::after {
+      background-position: 50% 0;
     }
   }
 
@@ -81,7 +85,6 @@
   .page-header__logo--photo {
     padding-top: 95px;
     min-height: 290px;
-    background-size: 900px auto;
   }
 
   .page-header__title--photo {
@@ -96,25 +99,21 @@
     background-size: 100%;
   }
 
+  .page-header__logo--photo {
+    min-height: 300px;
+    padding-top: 102px;
+  }
+
   .page-header__logo::after {
     left: 0;
     bottom: -1px;
     background-position: center 0;
   }
 
-  .page-header__logo--photo {
-    background-size: 1200px auto;
-  }
-
   @media (min-resolution: 2dppx) {
     .page-header__logo {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-repeat: no-repeat;
-      background-size: 1200px auto;
-    }
-
-    .page-header__logo--photo {
-      background-size: 1200px auto;
     }
   }
 
