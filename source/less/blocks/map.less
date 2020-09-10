@@ -1,26 +1,11 @@
 .map {
   box-sizing: border-box;
-  position: relative;
+  height: 350px;
+  width: 100%;
 }
 
-.map__marker {
-  width: 27px;
-  height: 27px;
-  position: absolute;
-  top: 161px;
-  left: 146px;
-}
-
-@media (min-width: @tablet-width) {
-  .map__marker {
-    left: 370px;
-    top: 164px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .map__marker {
-    left: 586px;
-    top: 162px;
-  }
+.map__iframe {
+  width: 100vw;
+  height: 100%;
+  max-width: 100%;
 }
